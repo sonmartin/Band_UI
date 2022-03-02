@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*
+1.Từ ngoài vào trong
+2. Từ trên xuống
+3.Tổng quán đến chi tiết
+*/
+
+
+/*
+nguyên tắc làm 
+1.vị trí
+2.màu sắc
+3.kích thước
+4.kiểu dáng
+*/
+
+
+/*---lop dung chung*/
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.3333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-icon {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 12px;
+    line-height: 46px;
+}
+
+#slider {
+    height: 500px;
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/ass/CSS/img/anh1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+#slider .text-heading {
+    font-size: 25px;
+}
+
+#slider .text-des {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    margin: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(110, 97, 97);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+#content .text-about {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 49px;
+    overflow: hidden;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+}
+
+#conten .member-name {
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(49, 41, 41);
+}
+
+#content .member-img {
+    width: 200px;
+    height: 300px;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+
+.tour-section {
+    background-color: black;
+}
+
+.ticket-list {
+    background-color: #fff;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    background-color: red;
+    color: #fff;
+    padding: 3px;
+    margin-left: 16px;
+}
+
+.ticket-list .quality {
+    float: right;
+    border-radius: 50%;
+    background-color: black;
+    width: 24px;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+}
+
+
+/*-----Places-----*/
+
+.places-list {
+    margin-top: 42px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.places-img {
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover {
+    opacity: 0.5;
+}
+
+.places-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.places-heading {}
+
+.places-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.places-des {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.places-buy-btn {
+    color: #fff;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.places-buy-btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+
+/*---Contact----*/
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i {
+    margin-left: 250px;
+    width: 30px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    padding: 9px 15px;
+}
+
+.form-submit:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+/*----map----*/
+
+.map-img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social {
+    font-size: 40px;
+}
+
+.copyby {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    margin-top: 20px;
+}
